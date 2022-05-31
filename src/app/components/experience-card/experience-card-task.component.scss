@@ -1,0 +1,15 @@
+.jk-experience-card-task {
+  &:host {
+    display: block;
+    padding: var(--sp-tiny);
+  }
+  &__sub-task {
+    padding-left: var(--sp-bigger);
+  }
+  &__more-link {
+    font-size: 13px;
+  }
+  &__print-spacer {
+
+  }
+}

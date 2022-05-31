@@ -1,0 +1,74 @@
+@import "../../utils.component";
+
+.jk-experience-card {
+  &:host {
+    display: block;
+    padding: var(--sp-bigger) 0 ;
+    border-bottom: 1px solid #ccc;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    padding-bottom: var(--sp-default);
+    &__logo {
+      width: 200px;
+    }
+    &__info {
+      flex: 1 1 auto;
+    }
+    &__duration {
+      font-size: 16px;
+      padding-left: var(--sp-default);
+      flex: 0 0 auto;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+  }
+  &__position {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__logo {
+    margin-left: var(--sp-default);
+    max-width: 130px;
+    @media (max-width: $mobileScreenWidth) {
+      margin-top: var(--sp-default) ;
+    }
+  }
+
+  &__details {
+    @media print {
+      font-size: 13px;
+    }
+    @media (min-width: $mobileScreenWidth) {
+      display: flex;
+    }
+    &__content {
+      flex: 1 1 auto;
+    };
+    &__description {
+      margin-bottom: var(--sp-default);
+      flex: 1 1 ;
+    };
+  }
+
+  &__homepage {
+    display: inline-block;
+    margin-top: var(--sp-smaller);
+    margin-left: 28px;
+  }
+  &__print-spacer {
+    display: none;
+    @media print {
+      display: block !important;
+    }
+  }
+}

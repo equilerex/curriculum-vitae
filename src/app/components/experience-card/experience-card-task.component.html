@@ -1,0 +1,8 @@
+{{ text }} <ng-container *ngIf="link" > - <a class="jk-experience-card-task__more-link jk-hide-in-print" [href]="link" target="_blank">More info</a></ng-container>
+<ul class="jk-experience-card-task__sub-task" *ngIf="tasks">
+  <li *ngFor="let task of tasks">
+    <jk-experience-card-task [task]="task">
+    </jk-experience-card-task>
+  </li>
+</ul>
+

@@ -1,0 +1,283 @@
+{
+  "firstName": "Joosep",
+  "lastName": "Kõivistik",
+  "jobTitle": "Senior frontend engineer",
+  "email": "jokoivi@gmail.com",
+  "phone": "50302356",
+  "countryCode": "+45",
+  "linkedin": "https://www.linkedin.com/in/jokoivi/",
+  "pdfCvUrl": "https://www.koivistik.com/cv/joosep-koivistik-cv.pdf",
+  "homepage": "https://koivistik.com",
+  "location": "Cph, Denmark",
+  "nationality": "Estonian",
+  "image": "https://www.koivistik.com/cv/assets/images/portrait.jpg",
+  "birthDate": "1987-11-23",
+  "summary": "I’m an enthusiastic senior frontend engineer who’s specialised in building complex SaaS web applications based on the Angular framework. </br></br> I love working in large teams where there is a lot of interaction, code reviews, retros, good standards and everyone contributing and learning from one-another. I prefer an environment where there is a lot of collaboration between tech and product in order to deliver the best possible solutions.",
+  "prodSubFolder": "/cv/",
+  "languages": [
+    {
+      "name": "Estonian",
+      "level": "native"
+    },
+    {
+      "name": "English",
+      "level": "Fluent"
+    },
+    {
+      "name": "Danish",
+      "level": "Limited (module 4)"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Development",
+      "description": "Developing efficient and easy to use web applications using cutting edge frameworks and solutions."
+    },
+    {
+      "title": "Design",
+      "description": "Creating Aesthetically pleasing solutions for Digital, print or video mediums."
+    }
+  ],
+  "technical": {
+    "active": [
+      {
+        "name": "HTML / SCSS",
+        "usage": [
+          {
+            "startDate": "2006-01-01"
+          }
+        ]
+      },
+      {
+        "name": "Javascript",
+        "usage": [
+          {
+            "startDate": "2008-01-01"
+          }
+        ]
+      },
+      {
+        "name": "Typescript",
+        "usage": [
+          {
+            "startDate": "2018-05-03"
+          }
+        ]
+      },
+      {
+        "name": "Angular",
+        "usage": [
+          {
+            "startDate": "2018-05-03"
+          }
+        ]
+      },
+      {
+        "name": "Redux / Ngrx",
+        "usage": [
+          {
+            "startDate": "2018-05-03"
+          }
+        ]
+      },
+      {
+        "name": "AngularJS",
+        "usage": [
+          {
+            "startDate": "2013-09-01",
+            "endDate": "2016-08-01"
+          },
+          {
+            "startDate": "2017-06-01"
+          }
+        ]
+      },
+      {
+        "name": "React",
+        "usage": [
+          {
+            "startDate": "2016-01-01",
+            "endDate": "2017-01-01"
+          }
+        ]
+      },
+      {
+        "name": "RESTful APIs"
+      }
+    ],
+    "simpleSkills": [
+      "Building complex applications",
+      "Team work",
+      "Leading projects",
+      "Planning & Grooming",
+      "UI & UX design",
+      "Mentoring juniors",
+      "Responsive design"
+    ],
+    "tools": [
+      "Jira / Confluence",
+      "Github / Gitlab",
+      "Photoshop",
+      "Windows",
+      "scrum",
+      "WSL (ubuntu)"
+    ]
+  },
+
+  "hobbies": ["Crafting / DIY", "Photography / Videography", "Art projects"],
+  "experience": [
+    {
+      "name": "Kahoot! / Actimo",
+      "location": "Copenhagen / Denmark",
+      "description": "In 2020, Actimo was acquired by kahoot with the goal of being able to put more resources into growing their corporate solutions.",
+      "position": "Senior Frontend Engineer",
+      "startDate": "2020-01-01",
+      "url": "https://kahoot.com/",
+      "logo": "https://www.koivistik.com/cv/assets/images/kahoot.png",
+      "tasks": ["I still continued working on the 'Actimo' platform, so i have rather summarised all the highlights in the next section"],
+      "printSpacing": "80px"
+    },
+    {
+      "name": "Actimo",
+      "location": "Copenhagen / Denmark",
+      "description": "A platform which allows companies to create their own branded employee apps for onboarding, communication, training, employee-manager evaluations and social interaction.",
+      "position": "Senior Frontend Engineer",
+      "startDate": "2017-06-01",
+      "endDate": "2020-01-01",
+      "url": "https://www.actimo.com/",
+      "logo": "https://www.koivistik.com/cv/assets/images/actimo.png",
+      "tasks": [
+        {
+          "text": "During my time at Actimo, the whole platform has grown immensely both in terms of the overall feature offerings but also the architecture, scalability and code quality. Having always been either the only, or one of the two senior frontenders, I have played an integral role in most of the projects over the past 5 years. The most notable examples being:",
+          "tasks": [
+            "Rebuilding the whole end-user facing app from scratch using Angular and NgRx",
+            "Gradual re-build of the editor-facing app (angularJS + Angular hybrid where all new development was in Angular and the most relevant pages, components and architecture were fully converted one project at the time)",
+            { "text": "Actimo Academy feature",
+              "link": "https://www.actimo.com/academy/" },
+            { "text": "The Editor feature - Complete rebuild & revamp of the way we handled our user generated content, combining 6+ different page sets and concepts into a single unified pattern.",
+              "link": " https://www.youtube.com/watch?v=An667GCp3cc" },
+            "Pulse & One-on-one - manager / employee evaluation features",
+            "Social wall feature - kind of like Facebook groups.",
+            "Dashboards feature - Global stats page",
+            "Employee profiles"
+          ]
+        },
+        "Countless of smaller features and enhancements",
+        "On-boarding and mentoring 2 junior developers",
+        "Running frontend workgroups, documenting processes and making sure we follow them.",
+        "Helping with recruiting - scouting for candidates, doing interviews and reviewing tests."
+      ]
+    },
+    {
+      "name": "Tame",
+      "location": "Copenhagen / Denmark",
+      "description": "At the time, it was a very fresh startup working on an all-in-one platform for organising events",
+      "position": "Lead Frontend Developer",
+      "startDate": "2016-08-01",
+      "endDate": "2017-01-01",
+      "url": "https://www.tame.events/",
+      "logo": "https://www.koivistik.com/cv/assets/images/tame.png",
+      "tasks": [
+        "Working alongside the lead designer to come up with optimal ui/ux solutions / patterns",
+        "Building up the features using React and NodeJs ",
+        "Creating a modular and reusable component base"
+      ],
+      "printSpacing": "155px"
+    },
+    {
+      "name": "Agillic Aps",
+      "location": "Copenhagen / Denmark",
+      "description": "Omnichannel marketing automation platform",
+      "position": "Frontend Developer",
+      "startDate": "2013-09-01",
+      "endDate": "2016-08-01",
+      "url": "https://agillic.com/",
+      "logo": "https://www.koivistik.com/cv/assets/images/agillic.png",
+      "tasks": [
+        "Designing and developing the user-interface for their \"Match\" product line / MVC based AngularJS web application",
+        "Rewriting of a complex B2B web app \"Dialogue\" which was originally built upon now deprecated Flex framework. The new app was to be a proper modular, responsive / multi device capable HTML5 / AngularJS based MVC app using simple REST/json endpoints",
+        "communicating requests for api's and their model formats with the backend team in ukraine",
+        "Enhancing & improving the existing UI"
+      ]
+    },
+    {
+      "name": "Hapti.co (io-interactive's subsidiary)",
+      "location": "Copenhagen / Denmark",
+      "description": "A game studio which worked on a project called \"Gameglobe\" - a next gen browser game/portal driven by user generated content.",
+      "position": "Junior Frontend Developer",
+      "startDate": "2012-06-01",
+      "endDate": "2013-07-01",
+      "url": "https://tiny.one/gameglobe",
+      "urlText": "Demo",
+      "logo": "https://www.koivistik.com/cv/assets/images/haptico.png",
+      "tasks": [
+        "Frontend implementation for new features using jquery & html",
+        "backend implementation using python/django",
+        "Ensuring cross browser compatability",
+        "Modifying designs in photoshop to be responsive",
+        "Finding bugs and improving the existing UI",
+        "Improving and cleaning the existing codebase"
+      ]
+    },
+    {
+      "name": "Svejstrup & Lyng ApS",
+      "location": "Sønder-Omme / Denmark",
+      "description": "A tiny architecture bureau",
+      "position": "Lead Frontend Developer",
+      "startDate": "2011-06-01",
+      "endDate": "2012-06-01",
+      "tasks": [
+        "Architectural 3D visualization.",
+        "Creating and maintaining websites for various projects, sub-companies and assosiates.",
+        "Designing logos, business cards."
+      ],
+      "printSpacing": "50px"
+    },
+    {
+      "name": "Estonian defense forces",
+      "location": "Võru / Estonia",
+      "startDate": "2009-09-01",
+      "endDate": "2010-06-01",
+      "tasks": ["mandatory service of 9 months"]
+    },
+    {
+      "name": "Webox I/S",
+      "location": "Arhus / Denmark",
+      "description": "A web design company i created with a few friends on the side of our studies",
+      "position": "web developer",
+      "startDate": "2008-09-01",
+      "endDate": "2009-09-01",
+      "tasks": ["Creating simple home pages."]
+    }
+  ],
+  "education": [
+    {
+      "name": "Odder Højskole",
+      "location": "Odder  / Denmark",
+      "description": "6 months course focusing on:",
+      "startDate": "2011-01-01",
+      "endDate": "2011-06-01",
+      "tasks": ["Drawing", "Painting", "creativity and form", "Photography"]
+    },
+    {
+      "name": "Business Academy Arhus",
+      "location": "Arhus   / Denmark",
+      "description": "AP degree in multimedia design and communication",
+      "startDate": "2007-09-01",
+      "endDate": "2009-06-01",
+      "tasks": [
+        "Communication and presentation",
+        "Design and visualization",
+        "Interaction development",
+        "Digital marketing"
+      ]
+    },
+    {
+      "name": "Otepää Gymnasium",
+      "location": "Otepää / Estonia",
+      "description": "12 grade education",
+      "startDate": "1994-09-01",
+      "endDate": "2007-06-01"
+    }
+  ]
+}

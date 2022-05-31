@@ -1,0 +1,8 @@
+<div class="jk-skill-listing__name">
+  {{ name }}
+  <ng-content></ng-content>
+</div>
+<div class="jk-skill-listing__length" *ngIf="manualUsage || _Length">
+  <span class="jk-skill-listing__divider">|</span>
+  <span  class="jk-skill-listing__year">{{ manualUsage || _Length }}</span>
+</div>

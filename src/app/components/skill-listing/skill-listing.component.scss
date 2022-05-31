@@ -1,0 +1,26 @@
+.jk-skill-listing {
+  &:host {
+    display: flex;
+    font-size: 13px;
+    padding: var(--sp-tiny);
+    border-bottom: 1px solid #ccc;
+  }
+  &__name {
+    flex: 1 1 auto;
+  }
+  &__length {
+    padding-left: var(--sp-default);
+    flex: 0 0 auto;
+    min-width: 75px;
+    display: flex;
+  }
+  &__divider {
+    padding-left: var(--sp-small);
+    line-height: 16px;
+  }
+  &__year {
+    flex: 1 1 auto;
+    text-align: right;
+    white-space: nowrap;
+  }
+}

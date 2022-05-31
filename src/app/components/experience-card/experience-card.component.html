@@ -1,0 +1,30 @@
+<div class="jk-experience-card__header">
+  <div class="jk-experience-card__header__info">
+    <div class="jk-experience-card__title">{{ experience.name }}</div>
+    <div class="jk-experience-card__position">{{ experience.position }}</div>
+  </div>
+  <div class="jk-experience-card__header__duration">
+    {{ experience.startDate | jkDateFormat : 'YYYY' }} - {{ experience.endDate ?  (experience.endDate | jkDateFormat : 'YYYY') : 'Now' }}
+  </div>
+</div>
+<div class="jk-experience-card__details">
+  <div class="jk-experience-card__details__content">
+    <div class="jk-experience-card__details__description">
+      {{experience.description}}
+    </div>
+    <ul *ngIf="experience.tasks?.length">
+      <li *ngFor="let task of experience.tasks">
+        <jk-experience-card-task [task]="task">
+        </jk-experience-card-task>
+      </li>
+    </ul>
+  </div>
+  <div class="jk-experience-card__details__logo">
+    <img class="jk-experience-card__logo" *ngIf="experience.logo" [src]="experience.logo">
+  </div>
+</div>
+<a class="jk-experience-card__homepage" *ngIf="experience.url" [href]="experience.url" target="_blank">
+  {{ experience.url | jkStrippedUrl}}
+</a>
+<!-- A little clunky workaround for adjusting page break points upon print -->
+<div class="jk-experience-card-task__print-spacer" [style.height]="experience.printSpacing || 0"></div>

@@ -1,0 +1,83 @@
+<!-- Header -->
+<jk-info-block>
+  <jk-main-header
+    [firstName]="cv.firstName"
+    [lastName]="cv.lastName"
+    [jobTitle]="cv.jobTitle"
+    [countryCode]="cv.countryCode"
+    [phone]="cv.phone"
+    [email]="cv.email"
+    [linkedin]="cv.linkedin"
+    [pdfCvUrl]="cv.pdfCvUrl"
+  >
+  </jk-main-header>
+</jk-info-block>
+
+
+<!-- Profile -->
+<jk-info-block header="Profile" [fullWidth]="false">
+  <div  class="app-root__flex-block">
+    <img [src]="cv.image" width="150" />
+    <span class="app-root__summary" [innerHTML]="cv.summary"> </span>
+  </div>
+</jk-info-block>
+
+
+<!-- Technical -->
+<jk-info-block header="Technical">
+  <div class="app-root__flex-block">
+    <div class="app-root__skill-column">
+      <h3 class="app-root__skill-header">Base skills</h3>
+      <jk-skill-listing [name]="' '" [manualUsage]="'Years'"></jk-skill-listing>
+      <jk-skill-listing *ngFor="let skill of cv.technical.active" [name]="skill.name" [usage]="skill.usage"></jk-skill-listing>
+    </div>
+
+    <div class="app-root__skill-column">
+      <h3 class="app-root__skill-header">Experience</h3>
+      <jk-skill-listing *ngFor="let skill of cv.technical.simpleSkills" [name]="skill"></jk-skill-listing>
+    </div>
+
+    <div class="app-root__skill-column">
+      <h3 class="app-root__skill-header">Tools</h3>
+      <jk-skill-listing *ngFor="let skill of cv.technical.tools" [name]="skill"></jk-skill-listing>
+    </div>
+  </div>
+</jk-info-block>
+
+
+<!-- Experience -->
+<jk-info-block header="Experience">
+  <jk-experience-card *ngFor="let experience of cv.experience" [experience]="experience">
+  </jk-experience-card>
+</jk-info-block>
+
+
+<!-- Education -->
+<jk-info-block header="Education">
+  <jk-experience-card *ngFor="let education of cv.education" [experience]="education">
+  </jk-experience-card>
+</jk-info-block>
+
+
+<!-- Additional information -->
+<jk-info-block header="Additional">
+  <div class="app-root__flex-block">
+    <div class="app-root__skill-column">
+      <h3 class="app-root__skill-header">Personal</h3>
+      <jk-skill-listing *ngIf="cv.location">Location: {{ cv.location }}</jk-skill-listing>
+      <jk-skill-listing *ngIf="cv.nationality">Nationality: {{cv.nationality}}</jk-skill-listing>
+      <jk-skill-listing *ngIf="cv.birthDate">Born: {{ cv.birthDate | jkDateFormat : 'll' }}</jk-skill-listing>
+      <jk-skill-listing *ngIf="cv.homepage">Web: <a [href]="cv.homepage">{{cv.homepage | jkStrippedUrl}}</a></jk-skill-listing>
+    </div>
+
+    <div class="app-root__skill-column">
+      <h3 class="app-root__skill-header">Languages</h3>
+      <jk-skill-listing *ngFor="let lang of cv.languages" [name]="lang.name" [manualUsage]="lang.level"></jk-skill-listing>
+    </div>
+
+    <div class="app-root__skill-column">
+      <h3 class="app-root__skill-header">Hobbies</h3>
+      <jk-skill-listing *ngFor="let skill of cv.hobbies" [name]="skill"></jk-skill-listing>
+    </div>
+  </div>
+</jk-info-block>

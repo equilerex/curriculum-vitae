@@ -1,0 +1,66 @@
+:root {
+  // consistent spacings make for a better looking app
+  --sp-none: 0px;
+  --sp-tinier: 2px;
+  --sp-tiny: 4px;
+  --sp-smaller: 8px;
+  --sp-small: 12px;
+  --sp-default: 16px;
+  --sp-big: 24px;
+  --sp-bigger: 32px;
+  --sp-great: 40px;
+  --sp-greater: 48px;
+  --sp-huge: 64px;
+  --sp-huger: 80px;
+  --sp-immense: 96px;
+  --sp-gigantic: 128px;
+  --sp-enormous: 160px;
+
+  // colors
+  --col-primary: #4c8f95;
+}
+
+// global helper classes
+
+@media print {
+  .jk-hide-in-print {
+    display: none !important;
+  }
+  .jk-show-in-print {
+    display: block !important;
+  }
+  .jk-print-page-break { page-break-before: always; }
+}
+
+
+
+// css reset
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+ul {
+  margin-left: 24px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: var(--col-primary);
+  &:hover, &:active, &:hover {
+    opacity: 0.7;
+    color: var(--col-primary);
+  }
+  @media print {
+    text-decoration: none !important;
+  }
+}

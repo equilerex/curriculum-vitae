@@ -1,0 +1,41 @@
+@import "../../utils.component";
+
+.jk-info-block {
+  &:host {
+    display: flex;
+    padding: var(--sp-big) 0;
+    border-bottom: 3px solid rgb(0 0 0 / 18%);
+    flex-wrap: wrap;
+    @media (min-width: $mobileScreenWidth) {
+      padding-right: var(--sp-huger);
+    }
+    &--full-width {
+      padding-right: 0;
+    }
+    @media print {
+      padding-bottom: var(--sp-default);
+      &:last-child {
+        padding-bottom: 16px;
+        border-bottom: 0;
+      }
+    }
+
+  }
+  &__header {
+    margin: 0;
+    flex: 1 1 20%;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom:  var(--sp-great);
+    @media screen and (max-width: $mobileScreenWidth) {
+      font-size: 34px;
+      color: var(--col-primary);
+    }
+  }
+  &__content {
+    flex: 1 1 80%;
+    @media screen and (max-width: $mobileScreenWidth) {
+      flex: 1 1 100%;
+    }
+  }
+}

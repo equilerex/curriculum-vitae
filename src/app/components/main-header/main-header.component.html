@@ -1,0 +1,33 @@
+<!-- Intro-->
+<div class="jk-main-header__Intro">
+  <h1 class="jk-main-header__name">{{ firstName + ' ' + lastName }}</h1>
+  <h2 class="jk-main-header__job-title">{{ jobTitle }}</h2>
+</div>
+
+<!-- Contact info-->
+<div class="jk-main-header__contact">
+  <a
+    class="jk-main-header__contact__detail"
+    [attr.href]="'tel:' + countryCode + phone"
+  >
+    ({{ countryCode }}) {{ phone }}
+  </a>
+  <a class="jk-main-header__contact__detail" [attr.href]="'emailTo:' + email">
+    {{ email }}
+  </a>
+  <a
+    class="jk-main-header__contact__detail jk-main-header__contact__detail--mute-color"
+    [attr.href]="linkedin"
+  >
+    {{ linkedin | jkStrippedUrl }}
+  </a>
+  <a *ngIf="pdfCvUrl"
+    class="jk-main-header__contact__detail jk-hide-in-print"
+    media="screen"
+    target="_blank"
+    [attr.href]="pdfCvUrl"
+  >
+    Download cv
+  </a>
+  <div class="jk-main-header__contact__detail">{{ location }}</div>
+</div>

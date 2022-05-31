@@ -1,0 +1,54 @@
+@import "../../utils.component";
+
+.jk-main-header {
+  &:host {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__name {
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    @media screen and (max-width: 800px) {
+      font-size: 34px;
+    }
+    @media print {
+      font-size: 24px;
+    }
+  }
+
+  &__job-title {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    @media (max-width: $mobileScreenWidth) {
+      font-size: 24px;
+    }
+    @media print {
+      font-size: 24px;
+    }
+  }
+
+  &__Intro {
+    flex: 1 1 auto;
+  }
+
+  &__contact {
+    flex: 0 0 auto;
+    padding: var(--sp-small) var(--sp-default);
+    text-align: left;
+    &__detail {
+      display: block;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+      &--mute-color{
+        color: #333333;
+      }
+    }
+  }
+}
