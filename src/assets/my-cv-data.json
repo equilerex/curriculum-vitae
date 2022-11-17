@@ -127,10 +127,22 @@
   "hobbies": ["Crafting / DIY", "Photography / Videography", "Art projects"],
   "experience": [
     {
+      "name": "Nordea",
+      "location": "Copenhagen / Denmark",
+      "description": "Largest bank in the Nordics",
+      "position": " Senior IT Developer",
+      "startDate": "2022-09-01",
+      "url": "https://nordea.dk/",
+      "logo": "https://www.koivistik.com/cv/assets/images/nordea.png",
+      "tasks": ["Working at the \"Digital Wealth\" unit dealing with holdings and savings for private clients"],
+      "printSpacing": "80px"
+    },
+    {
       "name": "Kahoot! / Actimo",
       "location": "Copenhagen / Denmark",
       "description": "In 2020, Actimo was acquired by kahoot with the goal of being able to put more resources into growing their corporate solutions.",
       "position": "Senior Frontend Engineer",
+      "endDate": "2022-08-31",
       "startDate": "2020-01-01",
       "url": "https://kahoot.com/",
       "logo": "https://www.koivistik.com/cv/assets/images/kahoot.png",
