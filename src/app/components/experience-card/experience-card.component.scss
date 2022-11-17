@@ -65,10 +65,10 @@
     margin-top: var(--sp-smaller);
     margin-left: 28px;
   }
+
   &__print-spacer {
-    display: none;
     @media print {
-      display: block !important;
+      page-break-before: always;
     }
   }
 }

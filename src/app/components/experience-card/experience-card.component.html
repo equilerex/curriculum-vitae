@@ -27,4 +27,4 @@
   {{ experience.url | jkStrippedUrl}}
 </a>
 <!-- A little clunky workaround for adjusting page break points upon print -->
-<div class="jk-experience-card-task__print-spacer" [style.height]="experience.printSpacing || 0"></div>
+<div class="jk-experience-card__print-spacer" *ngIf="experience.printSpacing"></div>

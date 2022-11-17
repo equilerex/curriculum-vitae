@@ -130,12 +130,12 @@
       "name": "Nordea",
       "location": "Copenhagen / Denmark",
       "description": "Largest bank in the Nordics",
-      "position": " Senior IT Developer",
+      "position": "Senior IT Developer",
       "startDate": "2022-09-01",
       "url": "https://nordea.dk/",
       "logo": "https://www.koivistik.com/cv/assets/images/nordea.png",
       "tasks": ["Working at the \"Digital Wealth\" unit dealing with holdings and savings for private clients"],
-      "printSpacing": "80px"
+      "printSpacing": true
     },
     {
       "name": "Kahoot! / Actimo",
@@ -146,8 +146,7 @@
       "startDate": "2020-01-01",
       "url": "https://kahoot.com/",
       "logo": "https://www.koivistik.com/cv/assets/images/kahoot.png",
-      "tasks": ["I still continued working on the 'Actimo' platform, so i have rather summarised all the highlights in the next section"],
-      "printSpacing": "80px"
+      "tasks": ["I still continued working on the 'Actimo' platform, so i have rather summarised all the highlights in the next section"]
     },
     {
       "name": "Actimo",
@@ -178,7 +177,8 @@
         "On-boarding and mentoring 2 junior developers",
         "Running frontend workgroups, documenting processes and making sure we follow them.",
         "Helping with recruiting - scouting for candidates, doing interviews and reviewing tests."
-      ]
+      ],
+      "printSpacing": true
     },
     {
       "name": "Tame",
@@ -193,8 +193,7 @@
         "Working alongside the lead designer to come up with optimal ui/ux solutions / patterns",
         "Building up the features using React and NodeJs ",
         "Creating a modular and reusable component base"
-      ],
-      "printSpacing": "155px"
+      ]
     },
     {
       "name": "Agillic Aps",
@@ -210,7 +209,7 @@
         "Rewriting of a complex B2B web app \"Dialogue\" which was originally built upon now deprecated Flex framework. The new app was to be a proper modular, responsive / multi device capable HTML5 / AngularJS based MVC app using simple REST/json endpoints",
         "communicating requests for api's and their model formats with the backend team in ukraine",
         "Enhancing & improving the existing UI"
-      ]
+      ],"printSpacing": true
     },
     {
       "name": "Hapti.co (io-interactive's subsidiary)",
@@ -242,8 +241,7 @@
         "Architectural 3D visualization.",
         "Creating and maintaining websites for various projects, sub-companies and assosiates.",
         "Designing logos, business cards."
-      ],
-      "printSpacing": "50px"
+      ]
     },
     {
       "name": "Estonian defense forces",
@@ -259,7 +257,8 @@
       "position": "web developer",
       "startDate": "2008-09-01",
       "endDate": "2009-09-01",
-      "tasks": ["Creating simple home pages."]
+      "tasks": ["Creating simple home pages."],
+      "printSpacing": "100px"
     }
   ],
   "education": [
